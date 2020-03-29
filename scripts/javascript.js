@@ -11,7 +11,6 @@ var timerEl = document.getElementById("timer");
 var displayEl = document.getElementById("display");
 var responseEl = document.getElementById("response");
 var scoreBoardEl = document.getElementById("scoreBoard");
-var question
 
 var question1 = {
     q: "How many championships does Lewis Hamilton have?",
@@ -36,6 +35,7 @@ function init() {
     displayEl.textContent = "Welcome to the Formula 1 quiz!"
     questionNumber = 0;
     totalTimeLeft = 20;
+    score = 0;
     highScoreList = JSON.parse(localStorage.getItem("scorelist"));
     if (highScoreList === null) {
         highScoreList = [];
@@ -246,7 +246,7 @@ listEl.addEventListener("click", function (event) {
                 }
                 break;
             case "clear":
-                clearScore()
+                clearScore();
                 loadScoreBoard();
                 break;
             case "Return":
