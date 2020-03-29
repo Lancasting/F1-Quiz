@@ -80,7 +80,6 @@ function loadOptions() {
 
 }
 
-// create for loop and I variable so that same answers line up with questions change letters to numbers to use in for loop || event listener to change when button is clicked move to next question
 function buildquiz() {
     timerInterval = setInterval(function () {
         totalTimeLeft--;
@@ -259,47 +258,3 @@ listEl.addEventListener("click", function (event) {
         }
     }
 });
-
-
-
-// displayEl.textContent = questionList[questionNumber].q
-// var answer1 = document.querySelector("#button1");
-// answer1.textContent = questions[0].answer.a; //however we grab from object
-// var btn = document.createElement("button");
-// var answer2 = document.querySelector("#button2");
-// answer2.textContent = questions[1].answer.a; //however we grab from object
-// var btn = document.createElement("button");
-// var answer3 = document.querySelector("#button3");
-// answer3.textContent = questions[2].answer.a; //however we grab from object
-// var btn = document.createElement("button");
-// var answer4 = document.querySelector("#button4");
-// answer4.textContent = questions[3].answer.a; //however we grab from object
-// var btn = document.createElement("button");
-// var question = document.querySelector("#questions");
-// question.textContent = questions[0].question
-// Create a <button> element                // Insert text
-// document.appendChild("#buttons");
-//}
-// buildquiz();
-//if ((answer === true && questions[i].correctAnswer === "t") ||
-//  (answer === false && questions[i].answer === "f")) {
-// Increase score
-// score++;
-//  alert("Correct!");
-// }
-// else {
-//  alert("Wrong!");
-// }
-//var values = questions[0].answer.a;
-// console.log(values);
-
-//var students = [];
-//var student1 = { s: 1 };
-//students.push(student1);
-//localStorage.setItem("students", JSON.stringify(students));
-//var stored = JSON.parse(localStorage.getItem("students"));
-//var student2 = { s: 2 };
-//stored.push(student2);
-//localStorage.setItem("students", JSON.stringify(stored));
-//var result = JSON.parse(localStorage.getItem("students"));
-//console.log(result)
